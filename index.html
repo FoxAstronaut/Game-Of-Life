@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Game Of Life</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="libraries/p5.js" type="text/javascript"></script>
+    <script src="libraries/p5.dom.js" type="text/javascript"></script>
+    <script src="libraries/p5.sound.js" type="text/javascript"></script>
+    <script src="sketch.js" type="text/javascript"></script>
+  </head>
+  <div id="controls">
+    Controls
+    <input class="button" type="button" id="playPauseBtn" onclick="pausePlay()" value="Pause" />
+    <input class="button" type="button" onclick="clearCells()" value="Clear" />
+    Speed: <output id="speedSliderOutput">60</output>
+    <input type="range" min="1" max="120" value="60" class="slider" id="speedSlider" onchange="updateSpeed()"></input>
+  </div>
+</html>
